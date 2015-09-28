@@ -22,4 +22,4 @@ RUN buildDeps='gcc libc6-dev make' \
     && apt-get purge -y --auto-remove $buildDeps
 
 COPY redis.conf /usr/local/etc/redis/redis.conf
-# CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
